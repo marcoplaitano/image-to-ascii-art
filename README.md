@@ -1,4 +1,4 @@
-# IMAGE TO ASCII CONVERTER
+# IMAGE TO ASCII ART
 
 Create a text document containing the ASCII representation of any given image.
 
