@@ -26,8 +26,8 @@ font].
 ## Example Result
 
 Below are shown a sample image and its text version side by side.  
-The ASCII text has been generated with a [width] of 600 and displayed with font
-size 4.
+The ASCII text has been generated with a [width] of 350 and displayed with font
+size 10.
 
 ![demo_image]
 ![demo_ascii]
