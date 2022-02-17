@@ -25,7 +25,9 @@ font].
 
 ## Example Result
 
-Below are shown a sample image and its text version side by side:
+Below are shown a sample image and its text version side by side.  
+The ASCII text has been generated with a [width] of 600 and displayed with font
+size 4.
 
 ![demo_image]
 ![demo_ascii]
@@ -116,6 +118,10 @@ http://paulbourke.net/dataformats/asciiart/
 
 [monospaced font]:
 https://en.wikipedia.org/wiki/Monospaced_font
+
+[width]:
+#output-width
+"Anchor to header"
 
 [demo_image]:
 https://github.com/marcoplaitano/images/blob/main/image_to_ascii_demo_image.png
