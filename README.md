@@ -1,7 +1,6 @@
 # IMAGE TO ASCII ART
 
-Create a text document containing the ASCII representation of any given image.
-
+Convert any image into ASCII art.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## Description
@@ -10,12 +9,12 @@ This program takes an image and produces a copy of it made entirely of [ASCII]
 printable characters; this copy can, therefore, be stored in a plain text file.
 
 The idea is to take each pixel of the input image and, according to its
-brightness value, map it to a different character.  
+brightness value, map it to a certain character.  
 *Smaller* characters like ```.``` or ```:``` are mapped to the brighter areas of
 the image, while *bulkier* ones like ```@``` or ```#``` will be used to
 represent the shadows. (this behaviour can be [changed])
 
-The user can choose their own list of characters, I copied it from [here].
+The user can [choose] their own list of characters, I copied it from [here].
 
 **NOTE:**
 The text will only form a recognizable shape if displayed with a [monospaced
@@ -59,9 +58,9 @@ Path to the text file in which to write the output.
 
 Width for the ASCII text; intended as the maximum number of characters per line.  
 Based on this value, a corresponding *height* is calculated in order to preserve
-the original aspect ratio.
+the aspect ratio of the input image.
 
-Set this value to ```0``` to **not** alter the input size.
+Set this value to ```0``` to **not** alter the size.
 
 Having a bigger "canvas" leads to a clearer image, with more details; the
 downside is that it would take a rather small font size to be able to display
@@ -75,7 +74,7 @@ The characters **must** be sorted from lowest to highest "level of brightness".
 #### PRODUCE NEGATIVE
 
 This boolean value, when set to ```True```, will produce a negative version of
-the image, mapping the "higher value" characters of SEQUENCE to the darker
+the image: mapping the "higher value" characters of SEQUENCE to the darker
 areas of the picture.
 
 It should only be ```True``` when displaying black text on a light background.
@@ -111,6 +110,10 @@ https://theasciicode.com.ar/
 
 [changed]:
 #produce-negative
+"Anchor to header"
+
+[choose]:
+#sequence
 "Anchor to header"
 
 [here]:
